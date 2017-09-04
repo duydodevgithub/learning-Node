@@ -19,12 +19,15 @@ var addNote = function(title, body) {
 }
 var getAll = function() {
     var notes = [];
+    console.log("Getting all notes");
     notes = fs.readFileSync("notes-data.json");
     notes = JSON.parse(notes);
-    console.log(typeof notes);
-    // console.log(notes);
+    console.log(notes);
 }
 
+var getNote = function() {
+    
+}
 module.exports = {
     addNote,
     getAll

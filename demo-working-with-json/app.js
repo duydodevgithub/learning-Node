@@ -7,7 +7,7 @@ var argv = yargs.argv;
 var originalNote = {};
 originalNote.title = argv.title;
 originalNote.body = argv.body;
-// console.log(originalNote);
+console.log(argv);
 
 if(argv._[0] == "add") {
     notes.addNote(argv.title, argv.body);
